@@ -1,0 +1,58 @@
+:root{
+    /* Warna latar belakang butang */
+    --warna-butang: rgb(197, 195, 195);
+    /* Warna bingkai (BORDER COLOR) butang*/
+    --warna-border-butang: rgb(243, 179, 41);
+    /* Warna teks butang */
+    --warna-teks-butang: rgb(255, 255, 255);
+    /* Warna butang apabila tetikus menghala kearahnya (MOUSE HOVER) */
+    --warna-butang-hover: rgb(255, 157, 157);
+}
+
+body{
+    background: url(paparaniklan.jpg);
+    background-size: cover;
+}
+
+.stylebtn {
+    background-color: var(--warna-butang);
+    border-color: var(--warna-border-butang);
+    border-style: solid;
+    border-width: 3px;
+    color: var(--warna-teks-butang);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.5s;
+    animation: blinking 2s infinite;
+}
+
+.stylebtn:hover {
+    background-color: var(--warna-butang-hover);
+    transition: 0.5s;
+    box-shadow: 15px 15px 10px black;
+    animation: unset;
+}
+
+.kedudukanbtn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+@keyframes blinking {
+    0% {
+        border: solid 3px black;
+    }
+    50% {
+        border: solid 3px white;
+    }
+    50% {
+        border: solid 3px white;
+    }
+    100% {
+        border: solid 3px black;
+    }
+}

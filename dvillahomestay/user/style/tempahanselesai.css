@@ -1,0 +1,84 @@
+body{
+    background: url('bg.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+  z-index: 3;  
+}
+
+.rujukan{
+    color: greenyellow;
+}
+
+.rujukan:hover{
+    color: cyan;
+    text-decoration: none;
+}
+
+.boranglogin{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.boranglogindalam{
+    display: flex;
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-style: solid;
+    border-color: aqua;
+}
+
+.logininput{
+    width: 1000px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.titlecolor{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.maklumattempahan{
+    color: white;
+    font-size: 20px;
+}
+
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 1080px){
+    .logininput{
+        width: 1000px;
+    }
+    .boranglogin{
+        transform: none;
+        top: 0;
+        position: relative;
+    }
+    .boranglogindalam{
+        padding: 18px;
+    }
+}
+
+@media screen and (max-height: 590px){
+    .boranglogin{
+        transform: none;
+        top: 0;
+        position: relative;
+    }
+}

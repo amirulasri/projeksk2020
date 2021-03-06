@@ -1,0 +1,54 @@
+body{
+    background: url('bg.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+  z-index: 3;  
+}
+
+.boranglogin{
+    position: absolute;
+    width: 100%;
+    padding: 0 100px;
+    padding-top: 110px;
+}
+
+.boranglogindalam{
+    display: flex;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-style: solid;
+    border-color: aqua;
+}
+
+.logininput{
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.titlecolor{
+    color: white;
+}
+
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 1080px){
+    .boranglogindalam{
+        padding: 18px;
+    }
+    .boranglogin{
+        padding: 0 0px;
+        padding-top: 110px;
+    }
+}

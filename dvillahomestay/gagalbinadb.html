@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="description" content="D'Villa Homestay menyediakan rumah tumpangan dengan harga yang terendah! Lawati sekarang!">
+    <meta name="keywords" content="DVilla, Homestay, Homestay murah, Bajet, Homestay bajet">
+    <meta name="author" content="Amirul Asri">
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="DvillaHomestay - Tempah homestay mengikut bajet ideal anda" />
+    <meta property="og:description" content="Amirul Asri - Rujukan SPM Sains Komputer" />
+    <title>D'Villa Homestay</title>
+    <link rel="stylesheet" href="user/style/sambungangagalstyle.css" type="text/css">
+    <link rel="stylesheet" href="style/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style/loader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="style/favicon.ico">
+    <script src="jquery/jquery.js"></script>
+</head>
+
+<body onload="semakloginstatus()">
+    <br>
+    <div class="boranglogin">
+        <div class="boranglogindalam">
+            <div class="logininput">
+                <h3 class="titlecolor">Proses membina pangkalan data D'Villa Homestay Gagal!</h3>
+                <p class="titlecolor">Sila semak sambungan MySQL anda. Sekiranya masalah masih berterusan walaupun anda sudah memulakan servis MySQL, anda mungkin perlu ubah maklumat sambungan di ciptadb.php <br>Sekiranya sudah sedia, klik butang Cuba Lagi</p>
+                <a href="firststart.php" role="button" class="btn btn-primary">Mulakan semula halaman</a>
+            </div>
+        </div>
+    </div>
+    <div class="loader-wrapper">
+        <h1 class="textcolor">D'Villa Homestay</h1>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>
